@@ -30,7 +30,7 @@ wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
 chmod +x jq-linux64
 mv jq-linux64 /usr/local/bin/jq
 
-curl -o /usr/local/bin/add-to-fw.sh https://raw.githubusercontent.com/itsreddi/cloud-init/main/common/add-to-cloud-fw.sh
+curl -o /usr/local/bin/add-to-cloud-fw.sh https://raw.githubusercontent.com/itsreddi/cloud-init/main/common/add-to-cloud-fw.sh
 chmod +x /usr/local/bin/add-to-cloud-fw.sh
 
-/usr/local/bin/add-to-fw.sh --hcloud-token ${TOKEN} --hcloud-firewall-id ${FIREWALL_ID}
+/usr/local/bin/add-to-cloud-fw.sh --hcloud-token ${TOKEN} --hcloud-firewall-id ${FIREWALL_ID}
